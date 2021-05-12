@@ -1,0 +1,15 @@
+<h1>All Restaurants</h1>
+
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    <ul>
+      <% @restaurants.each do |restaurant| %>
+        <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+      <%end%>
+    </ul>
+
+  restaurant.name
+</div>
+
+
+<%= link_to "Add a new restaurant", new_restaurant_path %>
+
